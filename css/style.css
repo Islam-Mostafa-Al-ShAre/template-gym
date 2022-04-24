@@ -1,0 +1,243 @@
+/*  import font */
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
+/* Colors Used: #08D9D6  -  #252A34  -  #FF2E63  -  #EAEAEA */
+
+/* the main font in the site */
+body {
+   
+  font-family: "Shippori Antique B1", sans-serif;
+  line-height: 1.5;
+}
+
+/* comman classes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.bg-main {
+  background-color: #eaeaea;
+}
+
+.bg-primary {
+  background-color: #08d9d6;
+}
+
+.box-shadow {
+  box-shadow: 0 0 20px #252a34;
+}
+.py-1 {
+  padding: 50px 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.continer {
+  width: 80%;
+  margin: auto;
+}
+.pry-color {
+  color: #ff2e63;
+}
+.text-center {
+  text-align: center;
+}
+.l-header {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.m-header {
+  font-size: 2rem;
+  
+}
+.lead{
+  font-size: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* navbar style */
+
+.navbar {
+  display: flex;
+  background-color: #252a34;
+  height: 75px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+.navbar .content ul {
+  display: flex;
+}
+.navbar .content ul li {
+  padding: 0px 10px;
+}
+.navbar .content ul li a {
+  color: white;
+}
+.navbar .content ul li:after {
+  content: "";
+  background-color: #08d9d6;
+  display: block;
+  width: 100%;
+  height: 3px;
+  transition: transform.5s;
+  transform-origin: center;
+  transform: scale(0, 1);
+}
+.navbar .content ul li:hover::after {
+  transform: scale(1, 1);
+}
+
+/* home style */
+
+#home {
+  background-image: url(../img/showcase.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#home .overlay {
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #08d9d6;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background-color: #ff2e63;
+}
+/* about style */
+
+.about-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.about-content img {
+  margin-left: 1.5rem;
+  border: white solid 5px;
+}
+/* cta */
+
+#cta {
+  background: url(../img/cta.jpg) no-repeat center center/cover;
+  color: white;
+}
+
+#cta .cta-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6rem;
+}
+
+/* program style */
+
+.boxs {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.boxs .box {
+  flex: 1;
+  padding: 1rem;
+}
+.boxs .box img {
+  background-color: #08d9d6;
+  width: 80px;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+/* trainers */
+.trainers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.trainers .trainer {
+  flex: 1;
+  padding: 1.5rem;
+}
+.trainers .trainer img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.trainers .trainer ul li {
+  display: inline;
+  padding: 10px;
+}
+.trainers .trainer ul li a {
+  color: #08d9d6;
+}
+
+.trainers .trainer ul li a:hover {
+  color: #ff2e63;
+}
+/* contact */
+#contact {
+  display: flex;
+}
+#contact .contact-us,
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-us input ,#contact .contact-us textarea{
+    width: 100%;
+    padding:1rem ;
+    outline: none;
+    margin-bottom: 20px;
+    border: none;
+    
+}
+#contact .contact-us .group{
+    display: flex;
+}
+#contact .contact-us .group .text{
+    margin-right: 10px;
+}
+/* footer */
+.bg-dark{
+    background-color: #252a34;
+    color: white;
+}
+

@@ -1,0 +1,46 @@
+/*common class  */
+.l-header{
+     font-size: 2.5rem;
+     line-height: 1.2;
+}
+.lead{
+    font-size: 1rem;
+}
+/*navbar*/
+.navbar{
+    flex-direction: column;
+    padding:5px 0px ;
+    height: 80px;
+}
+
+/* about */
+.about-content {
+    flex-direction: column-reverse;
+    text-align:center
+
+}
+.about-content img{
+    width: 100%;
+    margin-top:30px ;
+}
+
+
+/* program */
+
+
+.boxs{
+    flex-direction: column;
+}
+
+
+/* .trainers  */
+.trainers {
+    flex-direction: column;
+}
+.trainers .trainer{
+    margin: 10px 0px;
+}
+
+#contact{
+    flex-direction: column;
+}
